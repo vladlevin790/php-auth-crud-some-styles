@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    background: rgba(128, 214, 255, 0.68);
+}
+
+header{
+    display: flex;
+    gap:20px;
+    padding: 50px;
+    border-bottom: 1px solid black;
+}
+
+header > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background: aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius:10px;
+}
+
+.editable{
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.post > p > button{
+    padding: 10px;
+    border:none;
+    background: rgba(128, 214, 255, 0.68);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:10px;
+}
+
+.post > p > a{
+    text-decoration: none;
+    color: black;
+    background: rgba(255, 128, 128, 0.68);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius:10px;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius:10px;
+    padding: 20px;
+}
+
+.modal-content > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 23px;
+}
+
+.modal-content > form  > input{
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    background: aliceblue;
+}
+
+.modal-content > form > input::placeholder {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-content > form > textarea{
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    background: aliceblue;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.new-post-form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background: aliceblue;
+    padding: 20px;
+    border-radius:10px;
+}
